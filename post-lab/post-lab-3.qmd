@@ -8,6 +8,8 @@ format: html
 ```{r}
 #import data from this website
 
+library(curl)
+
 wine_quality <- readr::read_delim("https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/winequality-red.csv",delim=';')
  
 ```
@@ -26,3 +28,6 @@ Create some exploratory tables or charts to help you better understand possible 
 ## Visualize
 
 Present your final results and upgrade this document's YAML to a professional level quality.
+
+
+
